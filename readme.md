@@ -1,2 +1,2 @@
 # Webtoon image panel downloader
-Simple script to download the main webtoon image panel.
+Simple chrome extension to download the main webtoon image panel.
