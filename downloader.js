@@ -1,12 +1,12 @@
-const image = [...document.getElementsByTagName('img')]
+(async () => {
+  const image = [...document.getElementsByTagName('img')]
     .find(img => [...img.classList].includes('_images'));
+  if (!image) return;
 
-if (image) {
-    fetch(image.src)
-        .then(response => response.blob())
-        .then(blob => {
-            const url = URL.createObjectURL(blob);
-            Object.assign(document.createElement('a'), {href: url, download: "image.png"}).click();
-            window.URL.revokeObjectURL(url);
-        });
-}
+  const response = await fetch(image.src)
+  const blob = await response.blob()
+
+  const url = URL.createObjectURL(blob);
+  Object.assign(document.createElement('a'),{ href: url, download: `${document.title}-panel.png` }).click();
+  window.URL.revokeObjectURL(url);
+})();
