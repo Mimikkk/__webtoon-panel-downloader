@@ -1,11 +1,11 @@
 {
-  "name": "Webtoon image downloader",
+  "name": "Webtoon panel downloader",
   "version": "621.420.69",
-  "description": "Downloads Webtoon's main image",
+  "description": "Downloads Webtoon's main panel",
   "manifest_version": 3,
-  "author": "JPII",
+  "author": "Jon Paul dwa",
   "action": {
-    "default_title": "Click to download webtoon main image"
+    "default_title": "Click to download Webtoon's main panel"
   },
   "permissions": [
     "activeTab",
