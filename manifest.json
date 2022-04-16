@@ -1,0 +1,17 @@
+{
+  "name": "Webtoon image downloader",
+  "version": "621.420.69",
+  "description": "Downloads Webtoon's main image",
+  "manifest_version": 3,
+  "author": "JPII",
+  "action": {
+    "default_title": "Click to download webtoon main image"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}
